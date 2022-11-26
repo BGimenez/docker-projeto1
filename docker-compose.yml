@@ -1,0 +1,9 @@
+version: ‘3.7’
+services:
+	apache:
+		image: http:lastest
+		container_name: meu-app
+		ports:
+			- ’80:80’
+		volumes:
+			- ./website:/usr/local/apache2/htdocs
